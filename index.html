@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sthavir Engineering Solutions Ltd.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/Sthavir2.png" alt="Logo" />
+                <span>Sthavir Engineering</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#engineeringservices">Engineering Services</a></li>
+                <li><a href="#placement">Placement</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu">
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#engineeringservices" onclick="toggleMenu()">Engineering Services</a></li>
+            <li><a href="#placement" onclick="toggleMenu()">Placement</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="video-container">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videobg.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="header">
+          <h1>Empowering Innovation</h1>
+          <p>Engineering Excellence for the Modern World</p>
+        </div>
+      </div>
+
+    <section id="about" class="container py-5">
+      <div class="row align-items-center">
+        <!-- Left side: Image -->
+        <div class="col-md-6 text-center">
+          <img src="assets/about.jpg" alt="About Sthavir" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+        </div>
+        <div class="col-md-6 text-left">
+          <h2>About Us</h2>
+          <p>
+            Welcome to Sthavir Engineering Solutions Ltd, delivers cutting-edge engineering solutions tailored for various industries. Our expertise in IT services ensures your business thrives in a digital landscape. Our passion for excellence and commitment to innovation empowers businesses to optimize operations, achieve goals, and drive growth. Contact us today to build a skilled workforce, receive software support, and unlock the potential of data for lasting success. Embark on a transformative journey with us.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- engineering services -->
+<section id="engineeringservices" class="container py-5">
+  <h2 class="text-center mb-5">Engineering Services</h2>
+  <p>
+    We are expertise in engineering domains like Automotive, Aerospace, Oil and Gas, Special Purpose Maching, Digital Manufacturing, AR/VR, Data Visualization.
+  </p>
+
+  <div class="row align-items-center">
+    <!-- First row: Industrial Automation -->
+    <div class="col-md-6 text-center mb-4">
+      <img src="assets/Industry_Automation.jpg" alt="Industrial Automation" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+    </div>
+    <div class="col-md-6 text-left mb-4">
+      <h2>Industrial Automation</h2>
+      <p>
+        Automation in metrology represents a significant leap towards achieving unparalleled productivity in manufacturing. By integrating automated control of multiple systems within a single cell, companies experience marked improvements in production consistency, which directly enhances product quality. Automation reduces labor, energy, and material costs, delivering a potent combination of efficiency and precision.
+      </p>
+    </div>
+
+    <!-- Second row: PLM Implementation -->
+    <div class="col-md-6 text-center">
+      <img src="assets/PLM.jpg" alt="PLM" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+    </div>
+    <div class="col-md-6 text-left">
+      <h2>PLM Implementation & Customization</h2>
+      <p>
+        We specialize in end-to-end Product Lifecycle Management (PLM) solutions tailored to your enterprise needs. Our expert team works closely with your stakeholders to implement, configure, and customize PLM platforms such as Siemens Teamcenter, PTC Windchill, and Dassault Systèmes 3DEXPERIENCE.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <section id="placement" class="container py-5">
+      <div class="row align-items-center">
+        <!-- Left side: Image -->
+        <div class="col-md-6 text-center">
+          <img src="assets/IndustryPlacement.jpg" alt="placement" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+        </div>
+        <div class="col-md-6 text-left">
+          <h2>Placement</h2>
+          <p>
+            We proudly collaborate with top-tier companies to offer career opportunities to our trainees and
+            partners. Our placement network includes organizations in manufacturing, automation, and product
+            development sectors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <!-- Team -->
+    <section id="team" class="container py-5">
+      <div class="row align-items-center">
+        <!-- Left side: Image -->
+        <div class="col-md-6 text-center">
+          <img src="assets/Team.jpg" alt="Our Team" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+        </div>
+        <div class="col-md-6 text-left">
+          <h2>Our Team</h2>
+          <p>
+            With a team of over 10 consultants, including Solution Architects, Software Architects, and Technical Experts, Sthavir brings deep industry knowledge and hands-on expertise to every project. Our consultants are carefully selected for their experience, professionalism, and passion for excellence, ensuring that they are truly seen as the experts in their domains.
+            Our team’s expertise spans across disciplines such as engineering, system engineering, manufacturing engineering, simulation, CAD, PDM, PLM, and data analytics, enabling us to provide comprehensive solutions that drive success in complex, multi-industry environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- Contact -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <div class="row align-items-center">
+    
+    <!-- Left side: Image -->
+    <div class="col-md-6 mb-4 mb-md-0 text-center">
+      <img src="assets/contact-us-banner.jpg" alt="Contact Us" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;" />
+    </div>
+
+    <!-- Right side: Form -->
+    <div class="col-md-6 col-sm-12">
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Send</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 Sthavir Engineering Solutions Ltd. All rights reserved.</p>
+      </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
