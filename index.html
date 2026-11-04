@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sthavir Engineering Solutions Private Ltd.</title>
+    <title>Sthavir Engineering Solutions Ltd.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -163,7 +163,10 @@
 
     <!-- Right side: Working Contact Form -->
     <div class="col-md-6 col-sm-12">
-      <form action="contact.php" method="POST">
+      <!-- Status messages are shown after contact.php redirects back to this page. -->
+      <div id="contactStatus" class="alert d-none" role="status" aria-live="polite"></div>
+
+      <form id="contactForm" action="./contact.php" method="post" accept-charset="UTF-8">
 
         <div class="form-group">
           <label for="name">Your Name *</label>
@@ -245,6 +248,25 @@
       const menu = document.getElementById('mobileMenu');
       menu.classList.toggle('active');
     }
+
+    // Show a friendly message when contact.php redirects back after submission.
+    document.addEventListener('DOMContentLoaded', function () {
+      const params = new URLSearchParams(window.location.search);
+      const status = params.get('status');
+      const statusBox = document.getElementById('contactStatus');
+
+      if (!statusBox) return;
+
+      if (status === 'success') {
+        statusBox.className = 'alert alert-success';
+        statusBox.textContent = 'Thank you for contacting us. Your enquiry has been submitted.';
+        statusBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else if (status === 'error') {
+        statusBox.className = 'alert alert-danger';
+        statusBox.textContent = 'Sorry, your enquiry could not be submitted. Please try again or email info@sthavir.co.uk directly.';
+        statusBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
   </script>
 </body>
 </html>
